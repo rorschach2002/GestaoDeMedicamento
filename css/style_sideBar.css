@@ -1,0 +1,293 @@
+/* 
+cinza : #76979B
+
+*/
+
+body{
+    background: #d3e2ec;
+}
+
+/*-----------------------------------------------------*/
+.sideBar{
+    background-image: linear-gradient(to bottom, #089cff 15%, #3781b3 );
+    box-shadow: -8px 4px 4px rgba(52, 54, 58, 0.35);
+    width: 65px;
+    height: 550px;
+    position: absolute;
+    top: 12%;
+    left: 1.2%;
+    border-radius: 40px 0 40px 40px;
+    display: flex;
+}
+@keyframes aparecer1{
+    0%{
+        width: 65px;
+    }
+    100% {
+        width: 250px;
+    }
+} 
+@keyframes aparecer2{
+    0%{
+        width: 250px;
+    }
+    100% {
+        width: 65px;
+    }
+}   
+.mostrarMais{
+    width: 18px;
+    height: 20px;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    font-size: 20px;
+    color: #ebffbf;
+    background: #089cff;
+    cursor: pointer;
+    display: flex;
+    transition: 0.3s;
+}
+#mostrar{
+    position: absolute;
+    top: 0px;
+    left: 3px;
+}
+.mostrarMenos{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 250px;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    font-size: 20px;
+    color: #ebffbf;
+    background: #089cff;
+    cursor: pointer;
+    display: none;
+    transition-duration: unset;
+    animation: aparecer3 .4s;
+}
+#mostrarM{
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    transform: rotate(180deg);
+}
+@keyframes aparecer3{
+    0%{
+        left: 60px;
+    }
+    100% {
+        left: 250px;
+    }
+} 
+
+
+input[type=radio]{
+    display: none;
+}
+.conta{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    border-radius: 50px;
+    border: none;
+    font-size: 30px;
+    color: #d3e2ec;
+    background: #2e3775;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#user{
+    position: absolute;
+    top: 9px;
+    left: 14px;
+}
+.inicio{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    border-radius: 40px 0 0 40px;
+    border: none;
+    font-size: 30px;
+    color: #d3e2ec;
+    background: transparent;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#casa{
+    position: absolute;
+    top: 9px;
+    left: 14px;
+}
+.meuPerfil{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 150px;
+    left: 15px;
+    border-radius: 40px 0 0 40px;
+    border: none;
+    font-size: 30px;
+    color: #d3e2ec;
+    background: transparent;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#caderno{
+    position: absolute;
+    top: 9px;
+    left: 14px;
+}
+.calendario001{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 215px;
+    left: 15px;
+    border-radius: 40px 0 0 40px;
+    border: none;
+    font-size: 30px;
+    color: #d3e2ec;
+    background: transparent;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#calendarinho{
+    position: absolute;
+    top: 9px;
+    left: 14px;
+}
+.grafico{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 280px;
+    left: 15px;
+    border-radius: 40px 0 0 40px;
+    border: none;
+    font-size: 30px;
+    color: #d3e2ec;
+    background: transparent;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#grafi{
+    position: absolute;
+    top: 9px;
+    left: 14px;
+}
+.notificacao{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 345px;
+    left: 15px;
+    border-radius: 40px 0 0 40px;
+    border: none;
+    font-size: 30px;
+    color: #d3e2ec;
+    background: transparent;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#sino{
+    position: absolute;
+    top: 9px;
+    left: 14px;
+}
+.configuracao{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 410px;
+    left: 15px;
+    border-radius: 40px 0 0 40px;
+    border: none;
+    font-size: 30px;
+    color: #d3e2ec;
+    background: transparent;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#engrenagem{
+    position: absolute;
+    top: 9px;
+    left: 14px;
+}
+
+.sair{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 485px;
+    left: 8px;
+    border-radius: 50px;
+    border: none;
+    font-size: 30px;
+    color: #d3e2ec;
+    background: #2e3775;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#saida{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: rotate(180deg);
+}
+
+menu input[type="radio"]:checked + label{
+    background: #d3e2ec;
+    color: #089cff;
+}
+.labelConta{
+    position: absolute;
+    top: -10px;
+    left: 60px;
+    transition: 0.2s;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    display: none;
+}
+.labelCont{
+    position: absolute;
+    top: -10px;
+    left: 70px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    display: none;
+}
+.labelSair{
+    position: absolute;
+    top: -10px;
+    left: 70px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    display: none;
+}
+@keyframes aparecer5{
+    0%{
+        width: 50px;
+        font-size: 13px;
+    }
+    100% {
+        width: 200px;
+    }
+} 
+@keyframes aparecer6{
+    0%{
+        width: 65px;
+    }
+    100% {
+        width: 250px;
+    }
+} 

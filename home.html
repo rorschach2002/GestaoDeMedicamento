@@ -7,17 +7,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style_home.css">
+    <link rel="stylesheet" href="css/style_sideBar.css">
 </head>
 <body>
 
     <div class="sideBar" id="sideBar">
-        <button class="mostrarMais" onclick="mostrarMa()" id="mostrarMais"><i id="mostrar" class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-    </div>
-    <div class="sideBar2" id="sideBar2">
-        <button class="mostrarMenos" onclick="mostrarMe()" id="mostrarMenos"><i id="mostrarM" class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-    </div>
+        <button class="mostrarMais" onclick="mostrarMa()" id="mostrarMais">
+            <i id="mostrar" class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </button>
+        <button class="mostrarMenos" onclick="mostrarMe()" id="mostrarMenos">
+            <i id="mostrarM" class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </button>
+        
+        <!------------------------------------------------------------------------>
 
-    <script src="js/js_home.js"></script>
+        <button class="conta"  id="conta">
+            <i id="user" class="fa fa-user" aria-hidden="true"></i>
+            <p id="labelconta" class="labelCont">Conta</p>
+        </button>
+        
+            <menu>
+                <input checked type="radio"  onclick="iniciarInicio()" value="ini" name="menuLateral" id="ini">
+                    <label class="inicio"  id="inicio" for="ini">
+                        <i id="casa" class="fa fa-home" aria-hidden="true"></i>
+                        <p id="labelInicio" class="labelConta">Início</p>
+                    </label> 
+    
+                <input  type="radio" onclick="iniciarPaciente()" value="meuPerf" name="menuLateral" id="meuPerf">
+                    <label class="meuPerfil" id="meuPerfil" for="meuPerf">
+                        <i id="caderno" class="fa fa-address-book" aria-hidden="true"></i>
+                        <p id="labelPaciente" class="labelConta">Paciêntes</p>
+                    </label>
+    
+                <input  type="radio" onclick="iniciarCalendario()" value="calenda" name="menuLateral" id="calenda">
+                    <label class="calendario001" id="calendario" for="calenda">
+                        <i id="calendarinho" class="fa fa-calendar" aria-hidden="true"></i>
+                        <p id="labelCalendario" class="labelConta">Calendário</p>
+                    </label>     
+    
+                <input  type="radio" onclick="iniciarGrafico()" value="graf" name="menuLateral" id="graf">
+                    <label class="grafico" id="grafico" for="graf">
+                        <i id="grafi" class="fa fa-area-chart" aria-hidden="true"></i>
+                        <p id="labelGrafico" class="labelConta">Gráfico</p>
+                    </label>    
+    
+                <input  type="radio" onclick="iniciarNotifica()" value="notifica" name="menuLateral" id="notifica">
+                    <label class="notificacao" id="notificacao" for="notifica">
+                        <i id="sino" class="fa fa-bell" aria-hidden="true"></i>
+                        <p id="labelNotificacao" class="labelConta">Notificações</p>
+                    </label> 
+    
+                <input  type="radio" onclick="iniciarConfigura()" value="confi" name="menuLateral" id="confi">
+                    <label class="configuracao" id="configuracao" for="confi">
+                        <i id="engrenagem" class="fa fa-cog" aria-hidden="true"></i>
+                        <p id="labelConfiguracao" class="labelConta">Configurações</p>
+                    </label> 
+            </menu>
+        <button class="sair" id="sair">
+            <i id="saida" class="fa fa-sign-out" aria-hidden="true"></i>
+            <p id="labelSair" class="labelSair">Sair</p>
+        </button> 
+    </div>
+    <script src="js/js_sideBar.js"></script>
 </body>
 </html>
